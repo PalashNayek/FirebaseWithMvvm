@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "563518229401",
+    "project_id": "myinterview-35295",
+    "storage_bucket": "myinterview-35295.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563518229401:android:d2a3eed996b1d93ca4a108",
+        "android_client_info": {
+          "package_name": "com.example.firebasewithmvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563518229401-gu8mi0oe8ef87iiljrsv9b0f2m3576m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV1maWB0zoclSsqhTgGJ_v4dq_lbJbDWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563518229401-gu8mi0oe8ef87iiljrsv9b0f2m3576m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563518229401:android:6b09dc69702a0182a4a108",
+        "android_client_info": {
+          "package_name": "com.palash.remotecofigexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563518229401-gu8mi0oe8ef87iiljrsv9b0f2m3576m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV1maWB0zoclSsqhTgGJ_v4dq_lbJbDWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563518229401-gu8mi0oe8ef87iiljrsv9b0f2m3576m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

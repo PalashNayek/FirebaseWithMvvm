@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dataAddToRealtimeDatabaseFragment">
+
+    <fragment
+        android:id="@+id/dataAddToRealtimeDatabaseFragment"
+        android:name="com.example.firebasewithmvvm.fragments.DataAddToRealtimeDatabaseFragment"
+        android:label="fragment_data_add_to_realtime_database"
+        tools:layout="@layout/fragment_data_add_to_realtime_database" />
+</navigation>

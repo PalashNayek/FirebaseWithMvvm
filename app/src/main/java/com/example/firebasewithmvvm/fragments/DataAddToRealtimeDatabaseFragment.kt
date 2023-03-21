@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.firebasewithmvvm.R
 import com.example.firebasewithmvvm.databinding.FragmentDataAddToRealtimeDatabaseBinding
+import com.example.firebasewithmvvm.model.NoteModel
 import com.example.firebasewithmvvm.viewmodel.AddToDataRealtimeDBViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -33,15 +35,21 @@ class DataAddToRealtimeDatabaseFragment : Fragment() {
 
         //submit button click
         binding.btnSubmit.setOnClickListener {
-            realtimeDBViewModel.addDataToRealtimeDB(
+            /*realtimeDBViewModel.addDataToRealtimeDB(
                 binding.txtTitle.text.toString(),
                 binding.txtDescription.text.toString()
-            )
+            )*/
+            realtimeDBViewModel.saveNotes(NoteModel(binding.txtTitle.text.toString(),
+                binding.txtDescription.text.toString()))
+            findNavController().navigate(R.id.action_dataAddToRealtimeDatabaseFragment_to_allNotesFragment)
         }
 
-        realtimeDBViewModel.realtimeDBResponse.observe(viewLifecycleOwner, Observer {
-            Toast.makeText(context, "$it", Toast.LENGTH_SHORT).show()
-        })
+        /*realtimeDBViewModel.realtimeDBResponse.observe(viewLifecycleOwner, Observer {
+            val success = it
+            if (success.equals("Data saved successful")){
+                findNavController().navigate(R.id.action_dataAddToRealtimeDatabaseFragment_to_allNotesFragment)
+            }
+        })*/
     }
 
     override fun onDestroyView() {

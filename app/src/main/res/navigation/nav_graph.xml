@@ -9,5 +9,13 @@
         android:id="@+id/dataAddToRealtimeDatabaseFragment"
         android:name="com.example.firebasewithmvvm.fragments.DataAddToRealtimeDatabaseFragment"
         android:label="fragment_data_add_to_realtime_database"
-        tools:layout="@layout/fragment_data_add_to_realtime_database" />
+        tools:layout="@layout/fragment_data_add_to_realtime_database" >
+        <action
+            android:id="@+id/action_dataAddToRealtimeDatabaseFragment_to_allNotesFragment"
+            app:destination="@id/allNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allNotesFragment"
+        android:name="com.example.firebasewithmvvm.fragments.AllNotesFragment"
+        android:label="AllNotesFragment" />
 </navigation>
